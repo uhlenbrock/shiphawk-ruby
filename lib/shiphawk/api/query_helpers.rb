@@ -7,6 +7,10 @@ module Shiphawk
         "items/#{sub_path}"
       end
 
+      def catalog_sale_path id
+        "catalog_sales/#{id}/pickup_times"
+      end
+
       def categories_path sub_path=nil
         "categories/#{sub_path}"
       end
@@ -23,6 +27,10 @@ module Shiphawk
         shipments_path "#{id}/notes"
       end
 
+      def notifications_path
+        "notifications/catalog_sale"
+      end
+
       def tracking_path id
         shipments_path "#{id}/tracking"
       end
@@ -31,7 +39,7 @@ module Shiphawk
         "shipments/#{sub_path}"
       end
 
-      def status_path id
+      def status_path
         shipments_path "status"
       end
 
