@@ -14,7 +14,7 @@ module Shiphawk
     # client = Shiphawk::Client.new
     # ```
     #
-    # You can also chose to use the class a singleton
+    # You can also chose to use the class as a singleton
     #
     # ```ruby
     # Shiphawk.{method_name}
@@ -29,7 +29,7 @@ module Shiphawk
       self::Client.new.send(method, *args, &block)
     end
 
-    attr_accessor :api_token
+    attr_accessor :api_token, :sandbox
   end
 
   autoload :Api,     'shiphawk/api'
