@@ -12,7 +12,6 @@ module Shiphawk
     include Shiphawk::Api::ShipmentNotes
     include Shiphawk::Api::ShipmentTracking
     include Shiphawk::Api::Shipments
-    include Shiphawk::Api::ShipmentsStatus
     include Shiphawk::Api::ZipCodes
 
     attr_reader :api_token, :options, :sandbox
